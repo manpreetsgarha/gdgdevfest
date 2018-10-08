@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

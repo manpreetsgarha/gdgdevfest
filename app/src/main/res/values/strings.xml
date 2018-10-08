@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GdgDevfest</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello">Hello GDG!</string>
+</resources>
