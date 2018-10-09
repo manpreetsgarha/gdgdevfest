@@ -1,0 +1,26 @@
+import com.android.build.gradle.BaseExtension
+import com.android.build.gradle.internal.dsl.DefaultConfig
+
+//project.apply("plugin": "com.android.application")
+project.apply("plugin": "kotlin-android")
+
+
+android {
+    BaseExtension be ->
+        be.compileSdkVersion(28)
+        be.defaultConfig({
+            DefaultConfig df ->
+                df.applicationId("com.manpreets.gdgdevfest")
+                df.minSdkVersion(15)
+                df.targetSdkVersion(28)
+                df.versionCode(1)
+                df.versionName("1.0")
+        })
+}
+
+project.dependencies {
+    DependencyHandler dh ->
+        dh.add("implementation", fileTree(dir: 'libs', include: ['*.jar']))
+        dh.add("implementation", "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version")
+        implementation
+}
