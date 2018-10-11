@@ -10,6 +10,23 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    flavorDimensions "default"
+
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+
+    productFlavors {
+        prod {
+            dimension "default"
+        }
+        dev {
+            dimension "default"
+        }
+    }
+
 }
 
 dependencies {
