@@ -10,9 +10,26 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    flavorDimensions "default"
+
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+
+    productFlavors {
+        prod {
+            dimension "default"
+        }
+        dev {
+            dimension "default"
+        }
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation Dependencies.KotlinJdk7
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.61"
 }
